@@ -19,7 +19,7 @@
     if(q1 == "YES" || q1 == "yes"){
         var q2 = prompt("How much would you like to add: ");
         var balance = balance + parseInt(q2);
-        console.log("Your new balance is "+ balance +" dollars")
+        console.log("Your new balance is "+ balance +" dollars");
     }
 
     var q4 = prompt("would you like a burger\nYES or NOT?");

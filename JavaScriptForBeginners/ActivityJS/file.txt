@@ -1,1 +1,12 @@
 str = "Hola mundo";
+atajo para identar Ctrl+,
+documente.write()me sirve para colocar datos en string en html para javascript
+/*
+
+Secuencia de escape	Nombre	Objetivo
+\n	Nueva línea (también conocido como salto de línea)	Denota una nueva línea.
+\r	Retorno de carro	Lleve el cursor al principio de la línea actual.
+\t	Pestaña	Denota una pestaña.
+\'	Escape de comillas simples	Denota el carácter '.
+\"	Escape de comillas dobles	Denota el carácter ".
+*/
