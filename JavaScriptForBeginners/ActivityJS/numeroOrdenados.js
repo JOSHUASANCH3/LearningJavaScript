@@ -16,7 +16,10 @@ const getfirstArray = num[0];
 const getLastArray = num[num.length - 1];
 //se ordena el array
 //num.sort(function(getfirstArray,getLastArray){return getfirstArray-getLastArray;});//Si compareFunction(a, b) es menor que 0, se sitúa a en un indice menor que b. Es decir, a viene primero.
+function orderArray(params) {
+    return num.sort(function(getfirstArray,getLastArray){return getfirstArray-getLastArray;});
+}
 console.log("EL array "+num);
 console.log("EL primer numero "+getfirstArray);
 console.log("EL ultimo numero "+getLastArray);
-console.log("Array ordenado "+ num.sort(function(getfirstArray,getLastArray){return getfirstArray-getLastArray;}));
+console.log("Array ordenado "+ orderArray());

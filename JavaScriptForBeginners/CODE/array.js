@@ -1,42 +1,50 @@
-//creating an array
-console.log("\n---Creating an Array---\n");
-let arrayLength = 5;
-let arr1 = [];
-let arr2 = Array(arrayLength);
-//Getting array length
-console.log("\n---Getting array length---\n");
-console.log(arr1.length+"\n");
-console.log(arr2.length+"\n");
-//Adding data during creation
-console.log("\n---Adding data during creation---\n");
-arr1 = ["A",true,2];
-console.log(arr1[0]+"\n");
-console.log(arr1[1]+"\n");
-//Adding data after creation
-console.log("\n---Adding data after creation---\n");
-arrayLength = 2;
-arr2 = Array(arrayLength);
-arr2[0] = "Value at index 0";
-console.log(arr2[0]);
-console.log(arr1[1]);
-//Length and index
-console.log("\n---Length and Index---\n");
-arr1 = ["A",true, 5];
-console.log(arr1.length);
-console.log(arr1[3]);//Doesnt exist
-console.log(arr1[2]);//Last index of array
-console.log(arr1[arr1.length - 1]+"\n");//Equals = 2
-//second array
-arr2 = Array(2);//Empty array of length 2
-arr2[1] = "Adding a value";
-console.log(arr2[1]);//last index of array
-console.log(arr2[arr2.length - 1]);//Index : 1[
-console.log(arr2[0]);//Not value yet
-//Length and Index part 2
-console.log("\n---Length and Index part 2---\n");
-let arr3 = Array(3);//Empty array of length 3
-arr3[2] = "Adding a value!";
-console.log(arr3[2]);//last index of array
-console.log(arr3[arr3.length - 1]);//Index : 2
-console.log(arr3[0]);//Not value yet
-console.log(arr3[1]);//Not value yet
+//crear un array
+let frutas = ["Manzana","Pera"];
+console.log(frutas.length);
+
+//Acceder a un elemento de Array mediante su índice
+let primero = frutas[0];// Manzana es el primer valor
+let ultimo = frutas[frutas.length - 1];// Banana es el ultimo valor
+
+//Recorrer un Array
+frutas.forEach(function(elemento, indice, array) {
+    console.log(elemento, indice);
+    // Manzana 0
+    // Banana 1
+});
+
+//Añadir un elemento al final de un Array
+let nuevaLongitud = frutas.push('Naranja'); // Añade "Naranja" al final
+// ["Manzana", "Banana", "Naranja"];
+
+//Eliminar el último elemento de un Array
+ultimo = frutas.pop(); // Elimina "Naranja" del final
+// ["Manzana", "Banana"]
+
+//Añadir un elemento al principio de un Array
+nuevaLongitud = frutas.unshift('Fresa'); // Añade "Fresa" al inicio
+// ["Fresa" ,"Manzana", "Banana"]
+
+//Eliminar el primer elemento de un Array
+primero = frutas.shift(); // Elimina "Fresa" del inicio
+// ["Manzana", "Banana"]
+
+//Encontrar el índice de un elemento del Array
+frutas.push('Fresa');// ["Manzana", "Banana", "Fresa"]
+let pos = frutas.indexOf('Banana'); // (pos) es la posición para abreviar
+// 1
+
+//Eliminar un único elemento mediante su posición
+let elementoEliminado = frutas.splice(pos, 1);// ["Manzana", "Fresa"]
+
+//Eliminar varios elementos a partir de una posición
+let vegetales = ['Repollo', 'Nabo', 'Rábano', 'Zanahoria']
+console.log(vegetales);// ["Repollo", "Nabo", "Rábano", "Zanahoria"]
+pos = 1, numElementos = 2;
+let elementosEliminados = vegetales.splice(pos, numElementos);// ["Nabo", "Rábano"] ==> Lo que se ha guardado en "elementosEliminados"
+console.log(vegetales);// ["Repollo", "Zanahoria"] ==> Lo que actualmente tiene "vegetales"
+
+//Copiar un Array
+let copiaArray = vegetales.slice();// ["Repollo", "Zanahoria"]; ==> Copiado en "copiaArray"
+
+//indexOf()-retorna el indice del objeto del array

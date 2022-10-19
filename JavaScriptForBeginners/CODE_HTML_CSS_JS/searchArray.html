@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searchArrays</title>
+    <link rel="stylesheet" href="searcArrays.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+
+    <h1>BUSCAR ARRAYS</h1>
+    <div class="container">
+        <div class="left">
+            <form action="" id="form">
+                <h4>Numero de lista</h4>
+                <input type="text" name="input" id="input" placeholder="Agrege un numero" size="15"
+                    ondrop="return false;" onpaste="return false;"
+                    onkeypress="return event.charCode>=48 && event.charCode<=57" required>
+                <!--Se usa el input para la entrada de datos donde name y id identificamos cual es la variable-->
+                <div id="msg"></div>
+                <br>
+                <div>
+                    <button type="submit">Submit</button> <button type="button">Search</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="right">
+            <h3>Resultado</h3>
+            <div id="posts">
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <form>
+        </form>
+        <div></div>
+    </div>
+</body>
+<script type="text/javascript" src="searchArray.js"></script>
+<!--se agrega el recurso de javascript-->
+
+</html>
