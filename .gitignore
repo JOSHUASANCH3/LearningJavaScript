@@ -1,2 +1,5 @@
-test
-/CRUD-EXAMPLE/
+# ignora unicamente el archivo TODO de la raiz, no subdir/TODO
+test/
+#ignora el archivo .json
+*.json
+#ignora los el archivo CRUD-EXAMPLE de JavaScriptForBeginners
