@@ -3,3 +3,4 @@ test/
 #ignora el archivo .json
 *.json
 #ignora los el archivo CRUD-EXAMPLE de JavaScriptForBeginners
+#ignora este comentario
