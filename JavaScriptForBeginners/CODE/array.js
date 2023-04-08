@@ -1,3 +1,5 @@
+//comentario ramdon
+
 //crear un array
 let frutas = ["Manzana","Pera"];
 console.log(frutas.length);
