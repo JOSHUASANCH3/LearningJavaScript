@@ -10,7 +10,7 @@ let ultimo = frutas[frutas.length - 1];// Banana es el ultimo valor
 frutas.forEach(function(elemento, indice, array) {
     console.log(elemento, indice);
     // Manzana 0
-    // Banana 1
+    // Banana 1 
 });
 
 //Añadir un elemento al final de un Array
